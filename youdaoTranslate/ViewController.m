@@ -24,7 +24,7 @@
     yd.appKey = @"";//你的appkey 也就是应用ID，注意修改bundleID
    
     
-    NSString *txtPath = @"/Users/dan/Desktop/test.txt";
+    NSString *txtPath = @"/Users/dan/Desktop/test.txt";//待翻译的文本路径
     
     NSError *error;
     NSString *resultString = [NSString stringWithContentsOfFile:txtPath encoding:NSUTF8StringEncoding error:&error];
@@ -90,7 +90,7 @@
 }
 
 - (void)writefile:(NSString *)string{
-    NSString *filePath = @"/Users/dan/Desktop/test1.txt";//[homePath stringByAppendingPathComponent:@"testfile.text"];
+    NSString *filePath = @"/Users/dan/Desktop/test1.txt";//翻译好的文本路径
     
     NSFileManager *fileManager = [NSFileManager defaultManager];
     
