@@ -13,6 +13,13 @@
 		744CA97D21A6590A0041BFBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 744CA97C21A6590A0041BFBF /* Assets.xcassets */; };
 		744CA98021A6590A0041BFBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744CA97E21A6590A0041BFBF /* LaunchScreen.storyboard */; };
 		744CA98321A6590A0041BFBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 744CA98221A6590A0041BFBF /* main.m */; };
+		744CA98D21A6592D0041BFBF /* libbase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 744CA98B21A6592D0041BFBF /* libbase.a */; };
+		744CA98E21A6592D0041BFBF /* libonline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 744CA98C21A6592D0041BFBF /* libonline.a */; };
+		744CA99121A65A030041BFBF /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744CA99021A65A030041BFBF /* AdSupport.framework */; };
+		744CA99321A65A0C0041BFBF /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744CA99221A65A0C0041BFBF /* CoreTelephony.framework */; };
+		744CA99521A65A390041BFBF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744CA99421A65A390041BFBF /* SystemConfiguration.framework */; };
+		744CA99721A65A420041BFBF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 744CA99621A65A420041BFBF /* libz.tbd */; };
+		744CA99921A65A4A0041BFBF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 744CA99821A65A4A0041BFBF /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,14 @@
 		744CA97F21A6590A0041BFBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		744CA98121A6590A0041BFBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		744CA98221A6590A0041BFBF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		744CA98A21A6592D0041BFBF /* FanYiSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FanYiSDK.h; sourceTree = "<group>"; };
+		744CA98B21A6592D0041BFBF /* libbase.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbase.a; sourceTree = "<group>"; };
+		744CA98C21A6592D0041BFBF /* libonline.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libonline.a; sourceTree = "<group>"; };
+		744CA99021A65A030041BFBF /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		744CA99221A65A0C0041BFBF /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		744CA99421A65A390041BFBF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		744CA99621A65A420041BFBF /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		744CA99821A65A4A0041BFBF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +48,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				744CA99921A65A4A0041BFBF /* libsqlite3.tbd in Frameworks */,
+				744CA99721A65A420041BFBF /* libz.tbd in Frameworks */,
+				744CA99521A65A390041BFBF /* SystemConfiguration.framework in Frameworks */,
+				744CA99321A65A0C0041BFBF /* CoreTelephony.framework in Frameworks */,
+				744CA99121A65A030041BFBF /* AdSupport.framework in Frameworks */,
+				744CA98E21A6592D0041BFBF /* libonline.a in Frameworks */,
+				744CA98D21A6592D0041BFBF /* libbase.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +66,7 @@
 			children = (
 				744CA97221A659080041BFBF /* youdaoTranslate */,
 				744CA97121A659080041BFBF /* Products */,
+				744CA98F21A65A020041BFBF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +81,7 @@
 		744CA97221A659080041BFBF /* youdaoTranslate */ = {
 			isa = PBXGroup;
 			children = (
+				744CA98921A6592D0041BFBF /* translateSDK */,
 				744CA97321A659080041BFBF /* AppDelegate.h */,
 				744CA97421A659080041BFBF /* AppDelegate.m */,
 				744CA97621A659080041BFBF /* ViewController.h */,
@@ -69,6 +93,28 @@
 				744CA98221A6590A0041BFBF /* main.m */,
 			);
 			path = youdaoTranslate;
+			sourceTree = "<group>";
+		};
+		744CA98921A6592D0041BFBF /* translateSDK */ = {
+			isa = PBXGroup;
+			children = (
+				744CA98A21A6592D0041BFBF /* FanYiSDK.h */,
+				744CA98B21A6592D0041BFBF /* libbase.a */,
+				744CA98C21A6592D0041BFBF /* libonline.a */,
+			);
+			path = translateSDK;
+			sourceTree = "<group>";
+		};
+		744CA98F21A65A020041BFBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				744CA99821A65A4A0041BFBF /* libsqlite3.tbd */,
+				744CA99621A65A420041BFBF /* libz.tbd */,
+				744CA99421A65A390041BFBF /* SystemConfiguration.framework */,
+				744CA99221A65A0C0041BFBF /* CoreTelephony.framework */,
+				744CA99021A65A030041BFBF /* AdSupport.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +335,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = shan.youdaoTranslate;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/youdaoTranslate/translateSDK",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = shankai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,7 +356,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = shan.youdaoTranslate;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/youdaoTranslate/translateSDK",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = shankai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
